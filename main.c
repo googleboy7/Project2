@@ -8,7 +8,7 @@
 int main() {
     Matrix *A = read_matrix("matrix1.txt");
     Matrix *B = read_matrix("matrix2.txt");
-    
+
 
     if (!A || !B || A->cols != B->rows) {
         printf("Matrix dimensions incompatible or read error\n");

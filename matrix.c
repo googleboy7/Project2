@@ -44,9 +44,6 @@ void *compute_element(void *arg) {
 
     args->result->data[args->row][args->col] = sum;
 
-    // ✅ Add this debug line:
-    if (args->row < 3 && args->col < 3)  // limit output
-        printf("result[%d][%d] = %d\n", args->row, args->col, sum);
 
     free(arg);
     return NULL;
